@@ -1,0 +1,44 @@
+.main_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    padding: 1rem;
+  }
+  .dynamic_info {
+    background-color: aliceblue;
+    padding: 1rem;
+    border: 1px solid rgb(0, 162, 255);
+    grid-gap: 1rem;
+  }
+  .dynamic_score_info {
+    display: flex;
+    justify-content: space-around;
+  }
+  .names {
+    color: blueviolet;
+  }
+  .score_text {
+    color: rgb(43, 137, 226);
+  }
+  .score {
+    color: rgb(226, 43, 119);
+  }
+  .score_inner_text {
+    color: rgb(73, 180, 87);
+    font-weight: bold;
+  }
+  .date {
+    color: rgb(73, 180, 87);
+    display: grid;
+    padding: 3px;
+    font-weight: bold;
+  }
+  .inner_date {
+    color: brown;
+  }
+  .bio {
+    color: rgb(43, 137, 226);
+  }
+  .inner_bio {
+    color: brown;
+  }
