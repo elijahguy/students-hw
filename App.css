@@ -1,4 +1,121 @@
-.App {
-  font-family: sans-serif;
-  text-align: center;
+.all_container {
+  display: grid;
+  background-size: contain;
+  background-repeat: space;
+  margin: 6rem 10rem;
+  height: 50rem;
+  background-position-x: right;
+}
+#App {
+  margin-top: 6rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  /* text-align: center; */
+}
+form {
+  margin-top: 3rem;
+  padding: 6rem;
+}
+input {
+  padding: 6px;
+  border-radius: 15px;
+  border: 2px solid rgb(193, 236, 253);
+  outline: 0;
+}
+input:hover {
+  border: 2px solid rgb(18, 16, 163);
+}
+ol {
+  display: grid;
+  padding: 2rem 4rem;
+  justify-self: end;
+  overflow: scroll;
+  height: 33rem;
+}
+
+li {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 1rem;
+  align-items: baseline;
+}
+button {
+  background-color: rgb(29, 16, 201);
+
+  color: white;
+  font-weight: bold;
+  padding: 9px;
+  border-radius: 15px;
+}
+button:hover {
+  background-color: rgb(23, 37, 230);
+}
+label {
+  font-weight: bold;
+  color: rgb(0, 140, 255);
+}
+.done {
+  color: rgba(18, 11, 119, 0.3);
+  text-decoration: line-through;
+}
+.olist {
+  z-index: 1;
+}
+.removeBtn {
+  margin-left: 3rem;
+}
+.addTodoBtn {
+  margin-left: 1rem;
+
+  color: white;
+  background-color: rgb(33, 95, 143);
+}
+.todoBtn:hover {
+  background-color: rgb(16, 42, 87);
+}
+.boxCheck {
+  background-color: rgb(241, 241, 241);
+}
+.inner_container {
+  display: grid;
+  padding: 1rem;
+  top: 18%;
+  height: 85%;
+  left: 63%;
+  right: 0;
+  bottom: 10%;
+  z-index: 1;
+}
+.container_scroll {
+  /* border: 1px solid lightblue; */
+  overflow: scroll;
+}
+@media (min-width: 1020px) {
+  .all_container {
+    background-repeat: no-repeat;
+  }
+}
+@media (max-width: 650px) {
+  #App {
+    grid-template-columns: none;
+    margin-top: 3rem;
+  }
+  .all_container {
+    margin: 0;
+    background-image: url();
+    background-repeat: no-repeat;
+  }
+  form {
+    padding: 1rem 1rem 3rem 1rem;
+    margin: 0;
+  }
+  ol {
+    padding: 3rem 0 9rem 0;
+  }
+  h1 {
+    text-align: center;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid lightgray;
+  }
 }
